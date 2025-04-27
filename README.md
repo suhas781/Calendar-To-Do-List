@@ -67,3 +67,10 @@ Future Improvements
 Contributing
 
 Feel free to fork this project, submit pull requests, or suggest features! Contributions are always welcome.
+
+Contact
+
+- Project Maintainer: Suhas
+- GitHub: https://github.com/suhas781
+- Email: suhasgs834@gmail.com
+
