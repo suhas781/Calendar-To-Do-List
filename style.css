@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  color: #00ffaa; /* Neon green to match the color scheme */
+  text-align: center;
+  font-size: 36px; /* Larger font size for better visibility */
+  text-shadow: 0 0 10px #0b573e, 0 0 20px #0b573e, 0 0 30px #0b573e; /* Glowing effect */
+  margin-bottom: 30px; /* Add space below the title */
+}
+
+body {
+  background: #121212;
+  color: #eee;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header button {
+  background: #00ffaa;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+  margin-bottom: 50px; /* Added extra margin */
+}
+
+.day-header {
+  font-weight: bold;
+  text-align: center;
+  background-color: #00ffaa;
+  padding: 10px;
+  color: #121212;
+  border-radius: 8px;
+}
+
+.day {
+  background: #1f1f1f;
+  padding: 25px; /* Enlarged padding */
+  text-align: center;
+  border-radius: 12px;
+  transition: background 0.3s;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.3); /* Neon glow effect */
+}
+
+.day:hover {
+  background: #00ffaa44;
+}
+
+.day.selected {
+  background: #00ffaa;
+  color: #121212;
+  font-weight: bold;
+}
+
+#todo-section {
+  background: #1e1e1e;
+  padding: 25px; /* Enlarged padding */
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.3); /* Neon glow effect */
+}
+
+.todo-input {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px; /* More spacing between input elements */
+}
+
+#task-input, #priority {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px; /* Improved font size */
+}
+
+#add-task {
+  background: #00ffaa;
+  color: #121212;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+#add-task:hover {
+  background: #00ffaa99; /* Glowing effect on hover */
+}
+
+#task-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.task-item {
+  background: #292929;
+  padding: 15px; /* Increased padding */
+  margin-bottom: 15px; /* Spacing between tasks */
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 18px; /* Larger text */
+}
+
+.task-normal {
+  color: #a8f0a5; /* Green for normal tasks */
+}
+
+.task-important {
+  color: #ff7070; /* Red for important tasks */
+}
+
+.task-both {
+  color: #ffcc00; /* Yellow for both normal and important */
+}
+
+.task-actions button {
+  margin-left: 10px;
+  background: #ff4c4c;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.task-actions .edit-btn {
+  background: #00ffaa;
+  color: #121212;
+}
+
+#task-list .task-item:hover {
+  background-color: #00ffaa44; /* Glowing hover effect */
+}
